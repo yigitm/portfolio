@@ -126,14 +126,49 @@ hr {
   cursor: pointer;
 }
 
+.current-stack {
+  display: none;
+}
+
 @media (min-width: 700px) {
   .container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: auto;
     grid-template-areas:
-      'header header'
-      'contact contact'
+      'header contact'
       'projects about';
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .me {
+    width: 250%;
+    padding: 1em;
+  }
+
+  .me-nav {
+    display: flex;
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact > i {
+    font-size: 8vw;
+    margin-right: 0.02em;
+  }
+
+  .current-stack {
+    display: block;
+    margin-top: 1.6em;
+    margin-left: 1.5em;
   }
 }
