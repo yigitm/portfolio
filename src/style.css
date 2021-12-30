@@ -2,5 +2,141 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(180, 150, 209);
+  background-color: #f1f1ee;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25%;
+  grid-template-areas:
+    'header'
+    'about'
+    'projects'
+    'footer';
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.me {
+  margin-left: 0.5em;
+}
+
+.menu > i {
+  margin-right: 1em;
+}
+
+ul li {
+  display: inline;
+  font-size: 0.8em;
+}
+
+ul li:nth-child(1),
+ul li:nth-child(2) {
+  background-color: rgb(115, 238, 115);
+}
+
+ul li:nth-child(4),
+ul li:nth-child(5) {
+  background-color: red;
+}
+
+ul li:nth-child(3) {
+  background-color: rgb(255, 230, 0);
+}
+
+ul li:nth-child(6) {
+  background-color: rgb(1, 110, 153);
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+
+h6,
+h5 {
+  font-family: 'Michroma', sans-serif;
+}
+
+hr {
+  height: 1em;
+  color: grey;
+}
+
+.title {
+  border-top: 1px solid black;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.about {
+  grid-area: about;
+  padding: 0.3em;
+  background-color: rgba(127, 255, 212, 0.198);
+}
+
+.text-about {
+  text-align: end;
+  font-size: 15vw;
+  font-family: 'Bebas Neue', cursive;
+  border-top: 0.3rem solid black;
+  border-left: 0.3rem solid black;
+}
+
+.projects {
+  grid-area: projects;
+  padding: 0.3em;
+  background-color: rgba(255, 0, 212, 0.192);
+}
+
+.text-projects {
+  font-size: 15vw;
+  font-family: 'Bebas Neue', cursive;
+  border-bottom: 0.3rem solid black;
+  border-right: 0.3rem solid black;
+}
+
+.projects > div {
+  display: none;
+  height: 5vh;
+  background-color: aquamarine;
+}
+
+.projects > div:nth-of-type(1) {
+  background-color: blue;
+}
+.projects > div:nth-of-type(2) {
+  background-color: rgb(255, 251, 0);
+}
+.projects > div:nth-of-type(3) {
+  background-color: rgb(86, 223, 109);
+}
+.projects > div:nth-of-type(5) {
+  background-color: rgb(255, 0, 234);
+}
+.projects > div:nth-of-type(5) {
+  background-color: rgb(255, 174, 0);
+}
+.projects > div:nth-of-type(6) {
+  background-color: rgb(255, 0, 212);
+}
+
+footer {
+  grid-area: footer;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 238, 0, 0.335);
 }
