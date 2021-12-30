@@ -3,18 +3,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f1f1ee;
-  overflow: hidden;
 }
 
 .container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25%;
+  grid-template-rows: auto;
   grid-template-areas:
     'header'
     'about'
-    'projects'
-    'footer';
+    'contact'
+    'projects';
 }
 
 header {
@@ -25,34 +24,26 @@ header {
 }
 
 .me {
-  margin-left: 0.5em;
+  margin-right: 0.3em;
+}
+
+.name {
+  margin-bottom: -0.5em;
+}
+
+.title {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.contact {
+  grid-area: contact;
+  margin: 0.5em;
+  text-align: center;
 }
 
 .menu > i {
-  margin-right: 1em;
-}
-
-ul li {
-  display: inline;
-  font-size: 0.8em;
-}
-
-ul li:nth-child(1),
-ul li:nth-child(2) {
-  background-color: rgb(115, 238, 115);
-}
-
-ul li:nth-child(4),
-ul li:nth-child(5) {
-  background-color: red;
-}
-
-ul li:nth-child(3) {
-  background-color: rgb(255, 230, 0);
-}
-
-ul li:nth-child(6) {
-  background-color: rgb(1, 110, 153);
+  margin-left: 0.3em;
 }
 
 h1 {
@@ -67,10 +58,6 @@ h5 {
 hr {
   height: 1em;
   color: grey;
-}
-
-.title {
-  border-top: 1px solid black;
 }
 
 .menu {
@@ -132,11 +119,21 @@ hr {
   background-color: rgb(255, 0, 212);
 }
 
-footer {
-  grid-area: footer;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 238, 0, 0.335);
+.menu,
+.about,
+.projects,
+.contact > i {
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'header header'
+      'contact contact'
+      'projects about';
+  }
 }
