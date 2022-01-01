@@ -154,7 +154,8 @@ form {
   }
 
   .menu,
-  .current-stack-mobile {
+  .current-stack-mobile,
+  form {
     display: none;
   }
 
