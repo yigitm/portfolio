@@ -77,7 +77,6 @@ hr {
 .about {
   grid-area: about;
   padding: 0.3em;
-  background-color: rgba(127, 255, 212, 0.198);
 }
 
 .text-about {
@@ -102,7 +101,7 @@ hr {
   grid-area: projects;
   padding: 0.3em;
   background-repeat: no-repeat;
-  background-color: rgba(255, 0, 212, 0.192);
+  background-color: rgba(245, 221, 7, 0.192);
 }
 
 .text-projects {
