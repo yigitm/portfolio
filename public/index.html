@@ -39,6 +39,7 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="cover d-none"></div>
     <div class="container">
       <header>
         <div class="menu">
@@ -48,7 +49,9 @@
           <a href="https://github.com/yigitm"
             ><i class="fab fa-github-square fa-2x"></i
           ></a>
-          <a href="#"><i class="fas fa-file-download fa-2x"></i></a>
+          <a href="images/yigit_mersin_resume.pdf" download
+            ><i class="fas fa-file-download fa-2x"></i
+          ></a>
         </div>
         <div class="me">
           <div class="me-nav">
@@ -115,21 +118,24 @@
         <p class="text-about">ABOUT.</p>
       </div>
       <div class="contact">
-        <a href="#"><i class="fas fa-envelope fa-3x"></i></a>
-
+        <a href="#"><i class="message fas fa-envelope fa-3x"></i></a>
         <a href="https://www.linkedin.com/in/yigitmersin/"
           ><i class="fab fa-linkedin fa-3x"></i
         ></a>
         <a href="https://github.com/yigitm"
           ><i class="fab fa-github-square fa-3x"></i
         ></a>
-        <a href="#"><i class="fas fa-file-download fa-3x"></i></a>
+        <a href="images/yigit_mersin_resume.pdf" download
+          ><i class="fas fa-file-download fa-3x"></i
+        ></a>
       </div>
       <div class="projects">
         <p class="text-projects">PROJECTS.</p>
       </div>
       <form>
-        <h5 class="text-center">Quick Message:</h5>
+        <h5 class="text-center">
+          <span>Quick Message: </span><i class="fas fa-times fa-2x cross"></i>
+        </h5>
         <textarea
           class="w-75 mb-2 m-auto"
           name="message"
@@ -138,7 +144,15 @@
           rows="5"
           placeholder="Type your message..."
         ></textarea>
-        <button class="btn btn-danger w-75 m-auto" type="submit">Send</button>
+        <button class="d-md-none btn btn-warning w-75 m-auto" type="submit">
+          Send
+        </button>
+        <button
+          class="d-none d-md-block btn btn-warning btn-lg w-75 m-auto"
+          type="submit"
+        >
+          Send
+        </button>
       </form>
     </div>
     <script

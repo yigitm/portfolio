@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   projects.addEventListener('mouseenter', () => {
     const textProjects = document.querySelector('.text-projects');
-    const gallery = document.querySelector('.gallery');
     textProjects.innerHTML = `<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -76,5 +75,20 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       projects.innerHTML = `<p class="text-projects">PROJECTS.</p>`;
     }, 500);
+  });
+
+  const form = document.querySelector('form');
+  const message = document.querySelector('.message');
+  const closeMessage = document.querySelector('.cross');
+  const cover = document.querySelector('.cover');
+
+  message.addEventListener('click', () => {
+    form.style.display = 'flex';
+    cover.classList.remove('d-none');
+  });
+
+  closeMessage.addEventListener('click', () => {
+    form.style.display = 'none';
+    cover.classList.add('d-none');
   });
 });
