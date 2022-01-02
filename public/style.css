@@ -63,12 +63,11 @@ hr {
 
 .current-stack-mobile {
   grid-area: stack;
-  margin: 2em;
   text-align: center;
 }
 
 .current-stack-mobile > img {
-  height: 4vh;
+  height: 2vh;
 }
 
 .current-stack-mobile:nth-of-type(1) {
@@ -141,16 +140,31 @@ form > h5 > i,
   color: grey;
 }
 
-.current-stack {
-  display: none;
-}
-
+.current-stack,
 .contact {
   display: none;
 }
 
 .cross {
   visibility: hidden;
+}
+
+.message-sent {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10vw;
+}
+
+.message-sent > h5 {
+  text-align: center;
+  font-size: 10vw;
+}
+
+.message-sent > a {
+  text-decoration: none;
+  color: rgba(4, 4, 247, 0.87);
 }
 
 @media (min-width: 760px) {
@@ -169,10 +183,6 @@ form > h5 > i,
   .cover,
   form {
     display: none;
-  }
-
-  .cross {
-    visibility: visible;
   }
 
   header {
@@ -239,6 +249,10 @@ form > h5 > i,
     height: 25vh;
   }
 
+  .cross {
+    visibility: visible;
+  }
+
   .cover {
     display: block;
     width: 100%;
@@ -247,5 +261,14 @@ form > h5 > i,
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.603);
     backdrop-filter: blur(7px);
+  }
+
+  .message-sent {
+    margin-top: 15%;
+    font-size: 2vw;
+  }
+
+  .message-sent > h5 {
+    font-size: 2vw;
   }
 }

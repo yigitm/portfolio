@@ -44,13 +44,13 @@
       <header>
         <div class="menu">
           <a href="https://www.linkedin.com/in/yigitmersin/"
-            ><i class="fab fa-linkedin fa-2x"></i
+            ><i class="fab fa-linkedin fa-3x"></i
           ></a>
           <a href="https://github.com/yigitm"
-            ><i class="fab fa-github-square fa-2x"></i
+            ><i class="fab fa-github-square fa-3x"></i
           ></a>
           <a href="images/yigit_mersin_resume.pdf" download
-            ><i class="fas fa-file-download fa-2x"></i
+            ><i class="fas fa-file-download fa-3x"></i
           ></a>
         </div>
         <div class="me">
@@ -90,28 +90,23 @@
       <div class="current-stack-mobile">
         <img
           src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-          alt=""
-          srcset=""
+          alt="stack"
         />
         <img
           src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"
-          alt=""
-          srcset=""
+          alt="stack"
         />
         <img
           src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-          alt=""
-          srcset=""
+          alt="stack"
         />
         <img
           src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
-          alt=""
-          srcset=""
+          alt="stack"
         />
         <img
           src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-          alt=""
-          srcset=""
+          alt="stack"
         />
       </div>
       <div class="about">
@@ -132,7 +127,14 @@
       <div class="projects">
         <p class="text-projects">PROJECTS.</p>
       </div>
-      <form>
+      <form action="#" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="Your message to Yigit" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://portfolio-c952a.web.app/message.html"
+        />
         <h5 class="text-center">
           <span>Quick Message: </span><i class="fas fa-times fa-2x cross"></i>
         </h5>
@@ -143,6 +145,7 @@
           cols="30"
           rows="5"
           placeholder="Type your message..."
+          required
         ></textarea>
         <button class="d-md-none btn btn-warning w-75 m-auto" type="submit">
           Send
