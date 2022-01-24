@@ -101,7 +101,6 @@ hr {
   grid-area: projects;
   padding: 0.3em;
   background-repeat: no-repeat;
-  background-color: rgba(245, 238, 179, 0.931);
 }
 
 .text-projects {
@@ -113,7 +112,6 @@ hr {
 
 .projects > div {
   height: 5vh;
-  background-color: aquamarine;
 }
 
 .carousel-control-next {
