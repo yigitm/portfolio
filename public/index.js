@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   about.addEventListener('mouseleave', () => {
     setTimeout(() => {
-      about.innerHTML = `<p class="text-about">ABOUT.</p>`;
+      about.innerHTML = '<p class="text-about">ABOUT.</p>';
     }, 500);
   });
 
@@ -34,28 +34,39 @@ window.addEventListener('DOMContentLoaded', () => {
     textProjects.innerHTML = `<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive;">Covid-19 Tracking App</h1>
+      <h6 class="text-center">Built with: Javascript, React, Redux, Thunk</h6>
+      <img src="images/react.gif" class="d-block w-100" alt="project-gif">      
+    </div>
+    <div class="carousel-item">
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">TV Guide</>
+      <h6 class="text-center">Built with: Javascript, Bootstrap, TV Maze API</h6>
+      <img src="images/tv_maze.gif" class="d-block w-100" alt="project-gif">
+    </div>
+    <div class="carousel-item">
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Score Board</>
+      <h6 class="text-center">Built with: Javascript, Microverse Leaderboard API</h6>
+      <img src="images/leaderboard.gif" class="d-block w-100" alt="project-gif">
+    </div>
+    <div class="carousel-item">
       <h1 class="text-center" style="font-family: 'Bebas Neue', cursive;">Spotify Release Tracker</h1>
+      <h6 class="text-center">Built with: Ruby on Rails, Spotify API</h6>
       <img src="images/app.gif" class="d-block w-100" alt="project-gif">      
     </div>
     <div class="carousel-item">
       <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">CSS Linter</h1>
+      <h6 class="text-center">Built with: Ruby</h6>
       <img src="images/css_linter.gif" class="d-block w-100" alt="project-gif">
     </div>
     <div class="carousel-item">
-    <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">TV Guide</>
-      <img src="images/tv_maze.gif" class="d-block w-100" alt="project-gif">
-    </div>
-    <div class="carousel-item">
-    <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Newsweek Clone</>
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Newsweek Clone</>
+      <h6 class="text-center">Built with: Html, CSS, Bootstrap</h6>
       <img src="images/newsweek.gif" class="d-block w-100" alt="project-gif">
     </div>
     <div class="carousel-item">
-    <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Rental House Website</>
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Rental House Website</>
+      <h6 class="text-center">Built with: Html, CSS, Bootstrap</h6>
       <img src="images/rental.gif" class="d-block w-100" alt="project-gif">
-    </div>
-    <div class="carousel-item">
-    <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">Score Board</>
-      <img src="images/leaderboard.gif" class="d-block w-100" alt="project-gif">
     </div>
   </div>
 
@@ -73,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   projects.addEventListener('mouseleave', () => {
     setTimeout(() => {
-      projects.innerHTML = `<p class="text-projects">PROJECTS.</p>`;
+      projects.innerHTML = '<p class="text-projects">PROJECTS.</p>';
     }, 500);
   });
 
