@@ -35,8 +35,13 @@ window.addEventListener('DOMContentLoaded', () => {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <h1 class="text-center" style="font-family: 'Bebas Neue', cursive;">Covid-19 Tracking App</h1>
-      <h6 class="text-center">Built with: Javascript, React, Redux, Thunk</h6>
+      <h6 class="text-center">Built with: Javascript, React, Redux, Thunk, Narrativa API</h6>
       <img src="images/react.gif" class="d-block w-100" alt="project-gif">      
+    </div>
+    <div class="carousel-item">
+      <h1 class="text-center" style="font-family: 'Bebas Neue', cursive;">React Group Project</h1>
+      <h6 class="text-center">Built with: Javascript, React, Redux, Thunk, SpaceX API</h6>
+      <img src="images/spacex.gif" class="d-block w-100" alt="project-gif">      
     </div>
     <div class="carousel-item">
       <h1 class="text-center" style="font-family: 'Bebas Neue', cursive">TV Guide</>
